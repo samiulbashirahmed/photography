@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px blue;
+
+
+            border-radius: 5px;
+            padding: 5px;
+
+        }
+
+        .photograph {
+            background-color: aqua;
+            height: 400px;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+
+
+        }
+
+        .photograph img {
+            height: 400px;
+            border: 2px solid blue;
+            border-radius: 10px;
+
+        }
+
+        .title-color {
+            color: darkred;
+        }
+
+        @media only screen and(max-width:688px) {
+            .container {
+                background-color: darkgreen;
+                height: 700px;
+            }
+
+            @media only screen and(min-width:689) and(max-width:992px) {
+                .container {
+                    background-color: darkred;
+                }
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="photograph">
+            <h1>
+                <span class="title-color"> Samiul Bashir Ahmed Photography</span>
+
+            </h1>
+            <p>Photography is my frist passion</p>
+        </div>
+        <div>
+            <img class="photograph" src="kobutor cover 1.jpg" alt="">
+        </div>
+    </section>
+
+</body>
+
+</html>
